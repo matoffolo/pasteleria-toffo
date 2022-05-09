@@ -1,5 +1,4 @@
 import "./App.css";
-
 import ItemListContainer from "./Componentes/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./Componentes/ItemDetailContainer/ItemDetailContainer";
 import NavBar from "./Componentes/NavBar/NavBar";
@@ -13,7 +12,7 @@ function App() {
      
       <Routes>
       <Route path='/' element={<Home/> }/> 
-      <Route path='/categoria/:categoryId' element={<ItemListContainer/> }/> 
+      <Route path='/category/:categoryId' element={<ItemListContainer/> }/> 
       <Route path='/item/:id' element={<ItemDetailContainer/> }/> 
       </Routes>
     </Router>
