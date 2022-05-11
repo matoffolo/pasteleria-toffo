@@ -35,13 +35,13 @@ function NavBar() {
               <Nav.Link as={Link} to="/" >
                 INICIO
               </Nav.Link>
-              <Nav.Link as={Link} to="/category/tortas" >
+              <Nav.Link as={Link} to="/categoria/tortas" >
                 TORTAS
               </Nav.Link>
-              <Nav.Link as={Link} to="/category/tartas" >
+              <Nav.Link as={Link} to="/categoria/tartas" >
                 TARTAS
               </Nav.Link>
-              <Nav.Link as={Link} to="/category/alfajores-macaron" >
+              <Nav.Link as={Link} to="/categoria/alfajores-macaron" >
                 ALFAJORES Y MACARONES
               </Nav.Link>
             </Nav>

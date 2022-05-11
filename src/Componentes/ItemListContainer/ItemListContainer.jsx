@@ -1,26 +1,38 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import Spinner from "../Spinner/Spinner";
 
-import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
 
 const ItemListContainer = () => {
-  const [products, setProducts] = useState([]);
+  const [productos, setProductos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const { categoryId } = useParams();
 
   useEffect(() => {
     const db = getFirestore();
-    let productosRefe;
-    if(!categoryId){
-      productosRefe = collection(db, "products");
-    }
-    else{
-      productosRefe = query(collection(db, 'products'), where('category', '===', categoryId));
+    let productosRef;
+    if (!categoryId) {
+      productosRef = collection(db, "products");
+    } else {
+      productosRef = query(
+        collection(db, "products"),
+        where("categoria", "==", categoryId)
+      );
     }
 
-    getDocs(productosRefe).then((res) => {
-      setProducts(res.docs.map((item) => ({ id: item.id, ...item.data() })));
-      setTimeout(() => {}, 2000);
+    getDocs(productosRef).then((res) => {
+      setProductos(res.docs.map((item) => ({ id: item.id, ...item.data() })));
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
     });
   }, [categoryId]);
 
@@ -35,7 +47,17 @@ const ItemListContainer = () => {
           </div>
         </div>
       </div>
-      <ItemList productos={products} />
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <ItemList
+          productos={
+            !categoryId
+              ? productos
+              : productos.filter(({ categoria }) => categoria === categoryId)
+          }
+        />
+      )}
     </>
   );
 };

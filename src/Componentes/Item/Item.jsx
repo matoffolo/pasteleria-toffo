@@ -11,11 +11,11 @@ function Item({ producto }) {
   return (
     <>
   <Card style={{ width: '20rem'}} className='mb-3'>
-  <Card.Img variant="top" src={producto.img} alt={producto.name} height='250 px'/>
+  <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} height='250 px'/>
   <Card.Body className="d-flex flex-column">
-    <Card.Title className='flex-grow-1 text-center'>{producto.name}</Card.Title>
+    <Card.Title className='flex-grow-1 text-center'>{producto.nombre}</Card.Title>
     <Card.Text className="mt-auto text-center h5">
-    $ {producto.price}
+    $ {producto.precio}
     </Card.Text>
     <Link to={`/Item/${producto.id}`} className='text-center'><Button variant="outline-dark">Detalle</Button></Link>
   </Card.Body>
