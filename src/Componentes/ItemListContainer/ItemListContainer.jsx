@@ -38,15 +38,12 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <div className="container my-1 py-2">
-        <div className="row">
-          <div className="col-12 mb-2">
-            <h1 className="display-6 fw-bolder text-center">
-              NUESTROS PRODUCTOS
-            </h1>
-          </div>
-        </div>
+      <div className="text-center">
+        <h1 className="text-XL title-font text-gray-600 tracking-widest mb-3 py-4">
+          NUESTROS PRODUCTOS
+        </h1>
       </div>
+
       {isLoading ? (
         <Spinner />
       ) : (

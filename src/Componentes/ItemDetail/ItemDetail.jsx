@@ -46,7 +46,7 @@ const ItemDetail = ({ producto }) => {
                 />
               ) : (
                 <div>
-                <Link to="/cart" >
+                <Link to="/shoppingcart" >
                   <Button variant="outline-dark ms-2" >Ir al Carrito</Button>
                 </Link>
                 </div>

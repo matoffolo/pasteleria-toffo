@@ -32,7 +32,7 @@ const CartContextProvider = ({ children }) => {
   const totalItem = cart.reduce((total, item) => total + item.cantidad, 0);
 
   const precioTotal = cart.reduce(
-    (total, item) => total + item.cantidad * item.price,
+    (total, item) => total + item.cantidad * item.precio,
     0
   );
 
