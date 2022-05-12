@@ -49,7 +49,7 @@ const ShoppingCart = () => {
                 <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-4">
                   <div className="flex w-2/5">
                     <div className="w-20">
-                      <img className="h-30" src={product.imagen} alt={product.nombre} />
+                      <img className="w-20 rounded-md" src={product.imagen} alt={product.nombre} />
                     </div>
                     <div className="flex flex-col justify-between ml-4 flex-grow">
                       <span className="text-sm">{product.nombre}</span>
@@ -78,14 +78,14 @@ const ShoppingCart = () => {
             <Link
               to="/"
               className="flex btn btn-outline-dark py-1 mt-4 mt-10"
-            > Continuar Comprando
+            > <span aria-hidden="true">&larr;</span>Continuar Comprando
             </Link>
             <br></br>
             <Link
               to="/"
               onClick={() => clear()}
               className="flex btn btn-outline-dark py-1 mt-4"
-            > Borrar Carrito
+            ><span aria-hidden="true">&larr;</span> Borrar Carrito
             </Link>
           </div>
 
