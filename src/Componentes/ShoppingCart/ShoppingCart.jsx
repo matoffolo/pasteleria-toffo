@@ -46,7 +46,7 @@ const ShoppingCart = () => {
             </div>
             {cart.length > 0 &&
               cart.map((product) => (
-                <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-4">
+                <div key={product.id} className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-4">
                   <div className="flex w-2/5">
                     <div className="w-20">
                       <img className="w-20 rounded-md" src={product.imagen} alt={product.nombre} />

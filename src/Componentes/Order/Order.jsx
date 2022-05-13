@@ -36,6 +36,7 @@ const Order = ({ ticket, id }) => {
                     <h3 className="text-gray-900 fs-5 font-semibold">
                       {product.nombre}
                     </h3>
+                    <p>Categoria: {product.categoria}</p>
                     
                   </div>
                   <p className="flex-none font-semibold text-gray-900">

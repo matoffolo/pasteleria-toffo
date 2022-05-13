@@ -9,7 +9,6 @@ const OrderContainer = () => {
 
     const [ticketOrd, setTicket] = useState({})
     const [loading, setLoading] = useState(true)
-    console.log(ticketOrd)
 
     useEffect(() => {
         const db = getFirestore();
