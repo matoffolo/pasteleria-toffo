@@ -27,7 +27,7 @@ const ShoppingCart = () => {
     <>
       <div className="container mx-auto mt-10">
         <div className="flex shadow-md my-10">
-          <div className="w-3/4 bg-white px-10 py-10  ">
+          <div className="w-3/4 bg-white px-5 py-5  ">
             <div className="flex justify-between border-b pb-8">
               <h1 className="font-semibold text-2xl">TU DULCE CARRITO</h1>
               <h2 className="font-semibold text-2xl">{totalItem} Productos</h2>
@@ -84,10 +84,7 @@ const ShoppingCart = () => {
                     ${product.precio}
                   </span>
                   <span className="text-center w-1/5 font-semibold  text-sm">
-                    $
-                    {(
-                      parseFloat(product.precio) * parseFloat(product.cantidad)
-                    ).toFixed(2)}
+                    ${parseFloat(product.precio) * parseFloat(product.cantidad)}
                   </span>
                 </div>
               ))}

@@ -54,7 +54,7 @@ function formBuy() {
     <>
       {cart.length > 0 ? (
         <div className="bg-white pt-10">
-          <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="max-w-2xl mx-auto pt-6 pb-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="sr-only">Checkout</h2>
 
             <form
@@ -123,11 +123,10 @@ function formBuy() {
                     <div className="mt-1">
                       <input
                         name="telefono"
-                        type="number"
+                        type="tel"
                         required
                         minLength={10}
-                        maxLength={10}
-                        pattern="^([0-9])"
+                        pattern="^([0-9]{6,20})"
                         title="(10 digitos)"
                         onChange={handleOnChange}
                         className="block w-full border-2 py-1.5 pl-2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
