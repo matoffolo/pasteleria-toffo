@@ -7,17 +7,9 @@ const Order = ({ ticket, id }) => {
 
   return (
     <main className="bg-white relative lg:min-h-screen">
-      <div className="h-80 overflow-hidden lg:absolute lg:w-1/2 lg:h-full lg:pr-4 xl:pr-12">
-        <img
-          src="https://res.cloudinary.com/dpwek7uw8/image/upload/v1652367427/Paste/banners_yrwfvo.png"
-          alt="Bacall store confirmation"
-          className="h-full w-full object-center object-cover"
-        />
-      </div>
-
       <div>
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:py-32 lg:grid lg:grid-cols-2 lg:gap-x-8 xl:gap-x-24">
-          <div className="lg:col-start-2">
+        <div className="grid grid-cols-6 gap-4">
+          <div className="col-start-2 col-span-4">
             <p className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 text-gold font-lora">
               Gracias por su Compra
             </p>

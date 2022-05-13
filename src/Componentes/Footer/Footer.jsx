@@ -54,7 +54,7 @@ const Footer = () => {
                     />
                 </Link>
                 <div className="mt-2 flex justify-center space-x-6">
-                    {navigation.social.map((item) => (
+                              {navigation.social.map((item) => (
                         <a key={item.name} href={item.href} target='_blank' rel="noreferrer" className="text-dark hover:text-gold transition-all duration-150">
                             <item.icon className="h-6 w-6" aria-hidden="true" />
                         </a>
