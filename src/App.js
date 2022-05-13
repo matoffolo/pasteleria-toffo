@@ -8,6 +8,7 @@ import ShoppingCart from "./Componentes/ShoppingCart/ShoppingCart";
 import FormBuy from "./Componentes/FormBuy/formBuy"
 import OrderContainer from "./Componentes/OrderContainer/OrderContainer";
 import CartContextProvider from './CartContext/CartContext';
+import Footer from "./Componentes/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/formBuy' element={<FormBuy/> }/> 
         <Route exact path="/order/:id" element={<OrderContainer />} />
       </Routes>
+      <Footer/>
     </Router>
   </CartContextProvider>
   );

@@ -11,6 +11,7 @@ import {
 } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
 
+
 function formBuy() {
   const { cart, totalItem, precioTotal, clear, } =
     useContext(CartContext);
@@ -55,7 +56,7 @@ function formBuy() {
 
   return (
     <>
-      <div className="bg-white pt-10">
+    {cart.length > 0 ?(<div className="bg-white pt-10">
         <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="sr-only">Checkout</h2>
 
@@ -219,7 +220,15 @@ function formBuy() {
             </div>
           </form>
         </div>
-      </div>
+      </div>) :<div className="text-center">
+        <h1 className="text-lg title-font text-gray-700 tracking-widest">
+            NO TIENES NADA DULCE EN TU CARRITO
+          </h1>
+        <Link to="/">
+          <button className="btn btn-outline-dark position-relative">Ir a Productos</button>
+        </Link>
+        </div> }
+   
     </>
   );
 }

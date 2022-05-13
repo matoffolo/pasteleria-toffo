@@ -7,9 +7,9 @@ import Order from '../Order/Order'
 const OrderContainer = () => {
     const { id } = useParams()
 
-    const [ticket, setTicket] = useState({})
+    const [ticketOrd, setTicket] = useState({})
     const [loading, setLoading] = useState(true)
-    console.log(ticket)
+    console.log(ticketOrd)
 
     useEffect(() => {
         const db = getFirestore();
@@ -26,10 +26,10 @@ const OrderContainer = () => {
         <>
             {loading ? <Spinner />
                 :
-                (ticket ?
+                (ticketOrd ?
                     <>
                         <Order
-                            ticket={ticket}
+                            ticket={ticketOrd}
                             id={id}
                         /> </> : <div>TU ORDEN NO EXISTE</div>)}
         </>
