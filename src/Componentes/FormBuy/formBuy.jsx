@@ -123,12 +123,12 @@ function formBuy() {
                     <div className="mt-1">
                       <input
                         name="telefono"
-                        type="text"
+                        type="number"
                         required
                         minLength={10}
                         maxLength={10}
                         pattern="^([0-9])"
-                        title="351-xxx-xxxx (10 digitos)"
+                        title="(10 digitos)"
                         onChange={handleOnChange}
                         className="block w-full border-2 py-1.5 pl-2 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                       />
