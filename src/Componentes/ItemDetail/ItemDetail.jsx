@@ -19,7 +19,7 @@ const ItemDetail = ({ producto }) => {
       <div className="lg:w-4/5 mx-auto flex flex-wrap">
         <img
           alt="ecommerce"
-          className="lg:w-2/5 w-100 object-cover object-center rounded border border-gray-200"
+          className="lg:w-2/5 w-full object-cover object-center rounded border border-gray-200"
           src={producto.imagen}
         />
         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
@@ -46,7 +46,7 @@ const ItemDetail = ({ producto }) => {
                 />
               ) : (
                 <div>
-                  <Link to="/shoppingcart">
+                  <Link to="/cart">
                     <Button variant="outline-dark ms-2">Ir al Carrito</Button>
                   </Link>
                 </div>
