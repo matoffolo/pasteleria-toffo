@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# E-COMMERCE TOFFO-PASTELERIA
+**Proyecto e-commerce creado en el curso de React Js de [Coderhouse](https://www.coderhouse.com/).**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## DEMO
+![](/)
 
-## Available Scripts
+## Link del Proyecto
+- [Toffo-Pasteleria]()
 
-In the project directory, you can run:
+## Librerias - Documentacion
+- [React Js](https://es.reactjs.org/) - **React (también llamada React.js o ReactJS) es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.**
+   ```
+   Versión= 17.0.2
+   ```
+- [Firebase](https://firebase.google.com/?hl=es) - **Es una plataforma ubicada en la nube, integrada con Google Cloud Platform, que usa un conjunto de herramientas para la creación y sincronización de proyectos que serán dotados de alta calidad, haciendo posible el crecimiento del número de usuarios y dando resultado también a la obtención de una mayor monetización. Permite sincronizar fácilmente los datos de los proyectos sin tener que administrar conexiones o escribir lógica de sincronización compleja.**
+     ```
+   Versión= 9.8.0
+    ```
+- [React Router Dom](https://reactrouter.com/) - **React Router es una biblioteca de enrutamiento del lado del servidor y del cliente con todas las funciones para React, una biblioteca de JavaScript para crear interfaces de usuario. React Router se ejecuta en cualquier lugar React se ejecuta; en la web, en el servidor con node.js y en React Native.**
+   ```
+   Versión= 6.3.0
+   ```
+- [React Bootstrap](https://react-bootstrap.github.io/) - **React-Bootstrap reemplaza el JavaScript de Bootstrap. Cada componente se ha creado desde cero como un verdadero componente de React, sin dependencias innecesarias como jQuery.Como una de las bibliotecas de React más antiguas, React-Bootstrap ha evolucionado y crecido junto con React, lo que la convierte en una excelente opción como base de la interfaz de usuario.**-
+    ```
+   Versión= 2.3.1
+   ```
+- [Tailwindcss](https://tailwindcss.com/) - **Tailwind CSS es un framework de CSS de código abierto​ para el diseño de páginas web. La principal característica de esta biblioteca es que, a diferencia de otras como Bootstrap, no genera una serie de clases predefinidas para elementos como botones o tablas.**-
+    ```
+   Versión= 3.0.24
+   ```
+   
+## Clonar, instalar e iniciar el proyecto.
+##### `Version de Node: v16.14.1`
 
-### `npm start`
+```
+clon de git https://github.com/matoffolo/pasteleria-toffo.git
+cd pasteleria-toffo
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ejecute la aplicación
+```
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Autor
+**Martin Toffolo**
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [GitHub](https://github.com/matoffolo "Martin Toffolo")
+- [Linkedin](https://www.linkedin.com/in/mart%C3%ADn-ariel-t%C3%B3ffolo-78bb50112/)
