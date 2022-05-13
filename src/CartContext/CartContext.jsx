@@ -35,6 +35,7 @@ const CartContextProvider = ({ children }) => {
     (total, item) => total + item.cantidad * item.precio,
     0
   );
+  
 
   return (
     <CartContext.Provider

@@ -20,8 +20,8 @@ function NavBar() {
             <img
               alt="logo"
               src="https://res.cloudinary.com/dpwek7uw8/image/upload/v1651965717/Paste/Sin_t%C3%ADtulo_zyvp6g.png"
-              width="100"
-              height="90"
+              width="120"
+              height="100"
               className="d-inline-block"
             />
           </Navbar.Brand>
@@ -29,23 +29,27 @@ function NavBar() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="mx-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              style={{ maxHeight: "200px" }}
               navbarScroll
             >
-              <Nav.Link as={Link} to="/" >
+              <Nav.Link className="fw-bold" as={Link} to="/">
                 INICIO
               </Nav.Link>
-              <Nav.Link as={Link} to="/categoria/tortas" >
+              <Nav.Link className="fw-bold" as={Link} to="/categoria/tortas">
                 TORTAS
               </Nav.Link>
-              <Nav.Link as={Link} to="/categoria/tartas" >
+              <Nav.Link className="fw-bold" as={Link} to="/categoria/tartas">
                 TARTAS
               </Nav.Link>
-              <Nav.Link as={Link} to="/categoria/alfajores-macaron" >
+              <Nav.Link
+                as={Link}
+                className="fw-bold"
+                to="/categoria/alfajores-macaron"
+              >
                 ALFAJORES Y MACARONES
               </Nav.Link>
             </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex py-3">
               <FormControl
                 type="buscar"
                 placeholder="Buscar"
@@ -54,8 +58,8 @@ function NavBar() {
               />
               <Button variant="outline-dark ms-2">Buscar</Button>
             </Form>
-            <CartWidget />
           </Navbar.Collapse>
+          <CartWidget />
         </Container>
       </Navbar>
     </div>

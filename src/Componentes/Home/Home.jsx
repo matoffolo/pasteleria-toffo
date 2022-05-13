@@ -1,12 +1,12 @@
-import React from 'react';
-import CardPresent from '../Card/CardPresent';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import React from "react";
+import CardPresent from "../Card/CardPresent";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 function Home() {
   return (
     <div>
-    <CardPresent/>
-    <ItemListContainer/>
+      <CardPresent />
+      <ItemListContainer />
     </div>
   );
 }

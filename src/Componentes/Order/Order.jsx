@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Order = ({ ticket, id }) => {
-    let fecha = new Date(ticket.time.seconds*1000).toLocaleDateString('en-GB')
+  let fecha = new Date(ticket.time.seconds * 1000).toLocaleDateString("en-GB");
 
   return (
     <main className="bg-white relative lg:min-h-screen">
@@ -37,7 +37,6 @@ const Order = ({ ticket, id }) => {
                       {product.nombre}
                     </h3>
                     <p>Categoria: {product.categoria}</p>
-                    
                   </div>
                   <p className="flex-none font-semibold text-gray-900">
                     ${product.precio}
@@ -65,7 +64,7 @@ const Order = ({ ticket, id }) => {
                     <span className="block">Direccion: {ticket.direccion}</span>
                     <span className="block">Telefono: {ticket.telefono}</span>
                     <span className="block">E-mail: {ticket.email}</span>
-                    <span className="block">Fecha de Compra: {(fecha)}</span>
+                    <span className="block">Fecha de Compra: {fecha}</span>
                   </address>
                 </dd>
               </div>
