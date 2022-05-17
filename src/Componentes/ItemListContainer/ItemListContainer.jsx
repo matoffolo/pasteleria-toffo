@@ -22,7 +22,7 @@ const ItemListContainer = () => {
     if (!categoryId) {
       productosRef = collection(db, "products");
     } else {
-      productosRef = query(
+      productosRef = query( 
         collection(db, "products"),
         where("categoria", "==", categoryId)
       );
@@ -30,9 +30,7 @@ const ItemListContainer = () => {
 
     getDocs(productosRef).then((res) => {
       setProductos(res.docs.map((item) => ({ id: item.id, ...item.data() })));
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000);
+      setIsLoading(false)
     });
   }, [categoryId]);
 

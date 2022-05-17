@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Order = ({ ticket, id }) => {
-  let fecha = new Date(ticket.time.seconds * 1000).toLocaleDateString("en-GB");
+  let fecha = new Date(ticket.time.seconds * 1000).toLocaleDateString("es-AR");
 
   return (
     <main className="bg-white relative lg:min-h-screen">

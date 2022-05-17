@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import img from "./banner.png"
 
 function CardPresent() {
   return (
@@ -7,7 +8,7 @@ function CardPresent() {
       <Card>
         <Card.Img
           className="img-fluid"
-          src="https://res.cloudinary.com/dpwek7uw8/image/upload/v1652403364/Paste/Bord%C3%B3_y_Celeste_Tradicional_L%C3%ADneas_Banner_de_Graduaci%C3%B3n_ovcbls.png"
+          src={img}
           alt="Card image"
         />
       </Card>
