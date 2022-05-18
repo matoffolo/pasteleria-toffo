@@ -2,7 +2,7 @@
 **Proyecto e-commerce creado en el curso de React Js de [Coderhouse](https://www.coderhouse.com/).**
 
 ## DEMO
-![](/)
+![](/src/demo.gif)
 
 ## Link del Proyecto
 - [Toffo-Pasteleria](https://toffo-pasteleria.web.app)
