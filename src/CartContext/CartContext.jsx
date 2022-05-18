@@ -11,8 +11,8 @@ const CartContextProvider = ({ children }) => {
     );
     if (indexProduct !== -1) {
       const newCart = [...cart];
-      newCart[indexProduct].cantidad = newCart[indexProduct].cantidad +
-        product.cantidad;
+      newCart[indexProduct].cantidad =
+        newCart[indexProduct].cantidad + product.cantidad;
       setCart(newCart);
     } else {
       setCart([...cart, product]);
@@ -35,7 +35,6 @@ const CartContextProvider = ({ children }) => {
     (total, item) => total + item.cantidad * item.precio,
     0
   );
-  
 
   return (
     <CartContext.Provider

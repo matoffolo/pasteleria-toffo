@@ -3,9 +3,6 @@ import {
   Nav,
   Container,
   Navbar,
-  Form,
-  FormControl,
-  Button,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CartWidget from "../CartWidget/CartWidget";
@@ -49,15 +46,6 @@ function NavBar() {
                 ALFAJORES Y MACARONES
               </Nav.Link>
             </Nav>
-            <Form className="d-flex py-3">
-              <FormControl
-                type="buscar"
-                placeholder="Buscar"
-                className="me-2"
-                aria-label="buscar"
-              />
-              <Button variant="outline-dark ms-2">Buscar</Button>
-            </Form>
           </Navbar.Collapse>
           <CartWidget />
         </Container>
